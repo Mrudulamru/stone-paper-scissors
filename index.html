@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dangrek&family=Roboto:wght@100;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>sps game</title>
+  </head>
+  <body>
+    <main>
+      <div class="play">
+        <div id="scores">
+          <div class="title">
+            <p>rock</p>
+            <p>paper</p>
+            <p>scissors</p>
+          </div>
+          <div class="scorecon">
+            <div class="score">
+              <h3>computer<br />score</h3>
+              <p class="count c-count">0</p>
+            </div>
+            <div class="score">
+              <h3>your<br />score</h3>
+              <p class="count p-count">0</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="gameArea">
+          <div class="triangle-container">
+            <button data-id="rock" class="corner-button rockBtn">
+              <img src="imgs/cblue.png" class="circle" alt="Circle Image" />
+              <img
+                src="imgs/stone.png"
+                alt=""
+                class="base rock-img"
+                srcset=""
+              />
+            </button>
+            <button data-id="scissor" class="corner-button scissorBtn">
+              <img src="imgs/cpurp.png" class="circle" alt="Circle Image" />
+              <img
+                src="imgs/scissors.png"
+                alt=""
+                class="base scissor-img"
+                srcset=""
+              />
+            </button>
+            <button data-id="paper" class="corner-button paperBtn">
+              <img src="imgs/cyellow.png" class="circle" alt="Circle Image" />
+              <img
+                src="imgs/paper.png"
+                alt=""
+                class="base paper-img"
+                srcset=""
+              />
+            </button>
+            <div class="triangle-line top-line"></div>
+            <div class="triangle-line left-line"></div>
+            <div class="triangle-line right-line"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rules-container">
+        <div class="gameRules gameRulesBox">
+          <h3>Game Rules</h3>
+          <button class="close-btn">X</button>
+          <ul>
+            <li>
+              <span>Rock beats scissors, scissors beat paper, and paper beats rock</span>
+            </li>
+            <li>
+              <span>Agree ahead of time whether you'll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors”</span>
+            </li>
+            <li>
+              <span>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</span>
+            </li>
+            <li>
+              <span>If both players lay down the same hand, each player lays down another hand</span>
+            </li>
+          </ul>
+        </div>
+        <div class="corner">
+          <button class="rules">rules</button>
+          <button class="next nextBtnRemove nextBtn">next</button>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
